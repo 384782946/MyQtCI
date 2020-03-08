@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = MyQtCi
+TARGET = MyQtCI
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -38,3 +38,5 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DESTDIR = $$absolute_path($${_PRO_FILE_PWD_}/bin/)
